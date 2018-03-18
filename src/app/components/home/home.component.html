@@ -1,0 +1,13 @@
+<h1> This is the Home Page / Component </h1>
+<button routerLink=" ">Main Section</button>
+<button routerLink="/detail/:name">Detail Section</button>
+<button routerLink="/navbar">NavBar Button</button>
+
+<h1>Holiday</h1>
+<div *ngFor='let post of posts'>    
+    <ul>
+       <li><a routerLink='/detail/{{post.name}}'>{{post.name}}</a></li>
+    </ul>
+    
+</div>
+

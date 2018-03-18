@@ -1,0 +1,15 @@
+<h1> This is the Home Page / Component </h1>
+<button routerLink="/main">Main Section</button>
+<button routerLink="/detail">Detail Section</button>
+<button routerLink="/navbar">NavBar Button</button>
+
+<h1>Holiday</h1>
+<h2>{{passName}}</h2>
+<div *ngFor='let post of posts'>
+    <ul *ngIf="post.name==passName">
+       <li><h4>Date: {{post.date}}</h4></li>
+       <li><h4>Date Observed: {{post.observed}}</h4></li>
+       <li><h4>Public: {{post.public}}</h4></li>
+    </ul>
+    
+</div>
